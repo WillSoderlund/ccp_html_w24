@@ -1,3 +1,46 @@
+body {
+    background-color: lightblue;
+}
+.centered {
+    display: block;
+    margin: 0 auto;
+}
+.p2home {
+    border-top: 5px solid red;
+    padding-top: 10px;
+    line-height: 1.6;
+}
+main p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+h1 {
+    padding: 10px;
+    margin: 20px auto;
+    border: 5px solid #3399FF;
+    text-align: center;
+    background-color: #FFFF99;
+    color: #333333;
+}
+h3 {
+    border-left: 4px solid #4CAF50;
+    padding: 8px;
+    margin: 20px 0;
+    background-color: #f0f8ff;
+    color: #333333;
+    text-align: left;
+}
+footer {
+    font-weight: bold;
+    color: purple;
+    text-decoration: underline;
+}
+h2 {
+    font-weight: bold;
+    border-top: 5px solid black;
+    padding-top: 10px;
+}
 nav {
     background-color: blue;
 }
@@ -37,7 +80,6 @@ nav a:hover {
     overflow: hidden;
     z-index: 100;
 }
-
 .skip-link:focus {
     left: 0;
     top: 0;
@@ -45,5 +87,91 @@ nav a:hover {
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #000000;
-    z-index: 10000;
 }
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin: auto;
+}
+.photo-gallery figure {
+    margin: 0;
+}
+.photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.photo-gallery figcaption {
+    text-align: center;
+}
+.photo-gallerybread {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin: auto;
+}
+.photo-gallerybread figure {
+    margin: 0;
+}
+.photo-gallerybread img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.photo-gallerybread figcaption {
+    text-align: center;
+}
+.photo-gallerysoup {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.photo-gallerysoup figure {
+    margin: 0;
+}
+.photo-gallerysoup img {
+    width: 100%;
+    height: auto;
+}
+.photo-gallerysoup figcaption {
+    text-align: center;
+}
+.photo-gallerytahoe,
+.photo-galleryfalls,
+.photo-galleryboulder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.photo-gallerytahoe figure,
+.photo-galleryfalls figure,
+.photo-galleryboulder figure {
+    margin: 0;
+}
+.photo-gallerytahoe img,
+.photo-galleryfalls img,
+.photo-galleryboulder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.photo-gallerytahoe figcaption,
+.photo-galleryfalls figcaption,
+.photo-galleryboulder figcaption {
+    text-align: center;
+}
+@media (prefers-reduced-motion: reduce) {
+    animated-tahoe {
+      content: url('images/tahoenogif.png');
+    }
+    animated-falls {
+      content: url('images/fallsnogif.png');
+    }
+    animated-boulder {
+      content: url('images/bouldernogif.png');
+    }
+  }
